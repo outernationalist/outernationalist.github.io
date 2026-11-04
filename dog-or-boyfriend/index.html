@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dog or Boyfriend? — Natasha is Neat</title>
+<meta name="description" content="Eleven quotes. Two possibilities. Can you tell whether I wanted a dog or a boyfriend?">
+<link rel="icon" type="image/gif" href="/favicon.gif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;1,400&family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="quiz.js" defer></script>
+</head>
+<body>
+<main>
+<section id="intro" class="intro">
+<div class="title-wrap"><h1><span class="title-dog">Dog</span><span class="title-or">OR</span><span class="title-boyfriend">Boyfriend<span class="sr-only">?</span></span></h1></div>
+<div class="intro-copy"><p>For each quote, guess if it was a response to me wanting a romantic and sexually intimate relationship with another human being (also known as a “boyfriend”), or me wanting a codependent relationship with a wolf interbred into an emotional companion over thousands of years (also known as a “dog”)!</p>
+<button id="start" class="small-button">Play <span aria-hidden="true">→</span></button></div>
+</section>
+<section id="quiz" class="quiz" hidden aria-label="Dog or Boyfriend quiz">
+<p id="progress" class="progress"></p>
+<div class="quote-card"><span class="quote-mark" aria-hidden="true">“</span><h2 id="quote" tabindex="-1"></h2></div>
+<div class="answers" aria-label="Choose your answer"><button class="answer" data-answer="dog">Dog <span class="mark" aria-hidden="true"></span></button><button class="answer" data-answer="boyfriend">Boyfriend <span class="mark" aria-hidden="true"></span></button></div>
+<div class="feedback-row"><p id="feedback" role="status"></p><button id="next" class="small-button" hidden>Next →</button></div>
+</section>
+<section id="results" class="results" hidden aria-labelledby="results-title"><h2 id="results-title">Your score:</h2><p id="score" class="score"></p>
+<img class="ball-and-chain" src="ball-and-chain-transparent.png" alt="A slumped figure attached to a ball and chain" width="1254" height="1254">
+<button id="restart" class="small-button">Play again ↻</button><a class="home-link" href="/">Back home</a>
+</section>
+</main>
+<noscript><p class="noscript">Please enable JavaScript to play Dog or Boyfriend.</p></noscript>
+</body>
+</html>

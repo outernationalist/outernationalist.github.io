@@ -52,10 +52,10 @@ buttons.forEach(button => button.addEventListener('click', () => {
     option.disabled = true;
     if (option.dataset.answer === correct) {
       option.classList.add('correct');
-      option.querySelector('.mark').textContent = '✓';
+      option.querySelector('.mark').innerHTML = '<img src="check.svg" alt="">';
     } else if (option === button) {
       option.classList.add('wrong');
-      option.querySelector('.mark').textContent = '×';
+      option.querySelector('.mark').innerHTML = '<img src="close.svg" alt="">';
     }
   });
   byId('feedback').textContent = success ? 'Correct!' : 'Sorry, incorrect.';

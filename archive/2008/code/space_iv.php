@@ -28,11 +28,12 @@ div.a:hover, div.b:hover, div.c:hover,  div.d:hover, div.e:hover { background-co
 
 
 <!-- begin javascript -->
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-2003770-1";
-urchinTracker();
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBWXW9QV3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BBWXW9QV3M');
 </script>
 <!-- end javascript -->
 

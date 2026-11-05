@@ -24,11 +24,12 @@ body { background-color: #1a0516;}
 
 
 <!-- begin javascript -->
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-2003770-1";
-urchinTracker();
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBWXW9QV3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BBWXW9QV3M');
 </script>
 <!-- end javascript -->
 
